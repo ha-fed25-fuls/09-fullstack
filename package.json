@@ -1,0 +1,12 @@
+{
+  "name": "my-project",
+  "private": true,
+  "scripts": {
+        "dev:frontend": "npm run dev --workspace=frontend",
+        "restart:backend": "npm run restart --workspace=backend",
+        "build": "npm run build --workspaces"
+  },
+  "author": "David Andersson",
+  "type": "module",
+  "workspaces": ["frontend", "backend", "packages/shared"]
+}
