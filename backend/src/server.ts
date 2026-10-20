@@ -14,6 +14,9 @@ import productRouter from './routes/products.ts'
 const app: Express = express()
 const port: number = getPort()
 
+
+// express.static utgår från mappen som startade processen - alltså mappen där package.json ligger - alltså /backend
+app.use(express.static('../frontend/dist/'))
 app.use('/', logger)
 // express.json för body, express.static för frontend, cors
 
