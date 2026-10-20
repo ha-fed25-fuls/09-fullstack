@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/schema.ts",
   "types": "src/schema.ts",
-  "scripts": {},
+  "scripts": {
+	"build": ""
+  },
   "keywords": [],
   "author": "David Andersson",
   "license": "ISC",
