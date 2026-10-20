@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-	"start": "node --env-file .env dist/backend/src/server.js",
+	"start": "node --env-file-if-exists=.env dist/backend/src/server.js",
 	"restart": "npm run build && npm run start"
   },
   "keywords": [],
